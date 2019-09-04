@@ -2,17 +2,14 @@
 public class StringDemo {
 
 	public static void main(String[] args) {
-		String name3 = new String("Amit").intern();  // 2 or 1
-		String name = "Amit".intern();  // 1 or 0
-		String name2 = "Amit".intern();
-		
-		System.out.println(name == name2);
-		System.out.println(name2==name3);
-		name = "Ok";
-		
-		//System.out.println(name);
-		// char name [] = {'A','m','i','t'};
-		
+		// TODO Auto-generated method stub
+		String msg = "tHiS iS tESt";
+		String words []= msg.split(" ");
+		for(String word : words) {
+			String firstChar = String.valueOf(word.charAt(0)).toUpperCase();
+			String remChar = word.substring(1).toLowerCase();
+			System.out.print(firstChar + remChar+" ");
+		}
 
 	}
 
